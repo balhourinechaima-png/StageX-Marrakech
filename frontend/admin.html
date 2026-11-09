@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administration - StageX Marrakech</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StageX-Marrakech</h1>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="offres.html">Offres</a>
+            <a href="dashboard.html">Espace étudiant</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+
+        <h1>Administration des candidatures</h1>
+
+        <p>Gérez les candidatures et mettez à jour leur statut.</p>
+
+        <div id="adminMessage"></div>
+
+        <h2>Statistiques générales</h2>
+        <div id="adminStats" class="admin-stats">
+            Chargement des statistiques...
+        </div>
+
+        <h2>Toutes les candidatures</h2>
+
+        <button type="button" id="btnActualiserAdmin"
+                class="btn-primary"
+                onclick="chargerCandidaturesAdmin()">
+            Actualiser les candidatures
+        </button>
+
+        <button type="button"
+                class="btn-primary"
+                onclick="exporterCandidatures()">
+            Exporter les candidatures CSV
+        </button>
+        
+        <div id="adminCandidatures">
+            Chargement des candidatures...
+        </div>
+
+    </main>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

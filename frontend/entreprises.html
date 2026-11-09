@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StageX Marrakech | Entreprises</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/entreprises.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            STAGE<span>X</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="offres.html">Offres</a>
+            <a href="entreprises.html" class="active">Entreprises</a>
+            <a href="index.html#ai-match">AI Match</a>
+            <a href="index.html#about">À propos</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="login">Se connecter</a>
+            <a href="#" class="signup">Créer un compte</a>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="companies-hero">
+
+            <div class="section-tag">
+                ENTREPRISES À MARRAKECH
+            </div>
+
+            <h1>
+                Découvrez les entreprises
+                <span>qui recrutent des stagiaires.</span>
+            </h1>
+
+            <p>
+                Explorez les entreprises présentes à Marrakech et
+                découvrez leurs domaines d'activité ainsi que les
+                opportunités de stage potentielles.
+            </p>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="companies-tools">
+
+            <div class="company-search">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchCompany"
+                    placeholder="Rechercher une entreprise..."
+                >
+
+            </div>
+
+            <select id="domainFilter">
+                <option value="">Tous les domaines</option>
+                <option value="Intelligence Artificielle">Intelligence Artificielle</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Développement">Développement</option>
+                <option value="Infrastructure Digitale">Infrastructure Digitale</option>
+                <option value="Cybersécurité">Cybersécurité</option>
+            </select>
+
+        </section>
+
+
+        <!-- ================= RESULTS ================= -->
+
+        <section class="companies-section">
+
+            <div class="companies-header">
+
+                <div>
+                    <div class="section-tag">
+                        NOS ENTREPRISES
+                    </div>
+
+                    <h2>
+                        Entreprises disponibles
+                    </h2>
+                </div>
+
+                <span id="companiesCount">
+                    Chargement...
+                </span>
+
+            </div>
+
+
+            <div id="companiesGrid" class="companies-grid">
+
+                <div class="loading">
+                    Chargement des entreprises...
+                </div>
+
+            </div>
+
+
+            <div id="noCompanies" class="no-companies" style="display:none;">
+
+                <h3>Aucune entreprise trouvée</h3>
+
+                <p>
+                    Essayez une autre recherche ou un autre domaine.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    STAGE<span>X</span>
+                </a>
+
+                <p>
+                    La plateforme intelligente des stages
+                    à Marrakech.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+
+                    <strong>Plateforme</strong>
+
+                    <a href="offres.html">Offres</a>
+                    <a href="entreprises.html">Entreprises</a>
+                    <a href="index.html#ai-match">AI Match</a>
+
+                </div>
+
+                <div>
+
+                    <strong>Étudiants</strong>
+
+                    <a href="#">Créer un CV</a>
+                    <a href="#">Mon profil</a>
+                    <a href="#">Mes candidatures</a>
+
+                </div>
+
+                <div>
+
+                    <strong>StageX</strong>
+
+                    <a href="index.html#about">À propos</a>
+                    <a href="#">Contact</a>
+                    <a href="#">FAQ</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 StageX Marrakech
+            </span>
+
+            <span>
+                Built for students. Powered by AI.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/entreprises.js"></script>
+
+</body>
+
+</html>

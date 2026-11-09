@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes favoris - StageX Marrakech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>StageX-Marrakech</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="offres.html">Offres</a>
+        <a href="dashboard.html">Mon espace</a>
+        <a href="profil.html">Mon profil</a>
+        <button type="button" onclick="logout()">Déconnexion</button>
+    </nav>
+</header>
+
+<main class="dashboard">
+    <h1>Mes offres favorites</h1>
+
+    <div id="favorisMessage"></div>
+    <div id="favorisContainer">Chargement des favoris...</div>
+</main>
+
+<script src="js/auth.js"></script>
+<script src="js/favoris.js"></script>
+
+</body>
+</html>

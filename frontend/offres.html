@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Offres de stage | StageX Marrakech</title>
+
+    <link rel="stylesheet" href="css/offres.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">S</span>
+                <span>StageX</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="offres.html" class="active">Offres</a>
+                <a href="index.html#ai-match">AI Match</a>
+                <a href="index.html#about">À propos</a>
+            </div>
+
+            <a href="offres.html" class="nav-btn">
+                Trouver un stage
+            </a>
+            
+            <a href="inscription.html">Inscription</a>
+            <a href="connexion.html">Connexion</a>
+            <a href="dashboard.html">Mon espace</a>
+        </div>
+
+        <a href="profil.html">Mon profil</a>
+        <a href="favoris.html">Mes favoris</a>
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="offers-hero">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                ✦ STAGEX MARRAKECH
+            </span>
+
+            <h1>
+                Trouvez votre
+                <span>stage idéal</span>
+            </h1>
+
+            <p>
+                Explorez les opportunités de stage disponibles à Marrakech
+                et trouvez celle qui correspond à votre profil.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Rechercher un stage, une entreprise, une compétence..."
+            >
+
+            <button id="searchBtn">
+                Rechercher
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="filters-section">
+
+        <div class="filters-container">
+
+            <!-- Domaine -->
+            <select id="domainFilter">
+
+                <option value="all">
+                    Tous les domaines
+                </option>
+
+                <option value="data">
+                    Data
+                </option>
+
+                <option value="ia">
+                    Intelligence Artificielle
+                </option>
+
+                <option value="dev">
+                    Développement
+                </option>
+
+                <option value="infrastructure">
+                     Infrastructure Digitale
+                </option>
+
+                <option value="cyber">
+                    Cybersécurité
+                </option>
+
+            </select>
+
+
+            <!-- Type -->
+            <select id="typeFilter">
+
+                <option value="all">
+                    Tous les types
+                </option>
+
+                <option value="stage">
+                    Stage
+                </option>
+
+            </select>
+
+
+            <!-- Durée -->
+            <select id="durationFilter">
+
+                <option value="all">
+                    Toutes les durées
+                </option>
+
+                <option value="2">
+                    2 mois
+                </option>
+
+                <option value="3">
+                    3 mois
+                </option>
+
+                <option value="4">
+                    4 mois
+                </option>
+
+                <option value="5">
+                    5 mois
+                </option>
+
+                <option value="6">
+                    6 mois
+                </option>
+
+            </select>
+
+
+            <!-- Localisation -->
+            <select id="locationFilter">
+
+                <option value="all">
+                    Toutes les localisations
+                </option>
+
+                <option value="marrakech">
+                    Marrakech
+                </option>
+
+            </select>
+
+
+            <!-- AI -->
+            <label class="ai-filter">
+
+                <input
+                    type="checkbox"
+                    id="aiFilter"
+                >
+
+                <span>
+                    ✦ AI Match
+                </span>
+
+            </label>
+
+
+            <!-- Reset -->
+            <button id="resetFilters">
+                Réinitialiser
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESULTS HEADER ================= -->
+
+    <section class="results-section">
+
+        <div class="results-header">
+
+            <div>
+
+                <h2>
+                    Offres disponibles
+                </h2>
+
+                <p id="resultsCount">
+                    6 offres trouvées
+                </p>
+
+            </div>
+
+
+            <select id="sortFilter">
+
+                <option value="recent">
+                    Plus récentes
+                </option>
+
+                <option value="match">
+                    Meilleur AI Match
+                </option>
+
+                <option value="duration">
+                    Durée
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ================= OFFERS GRID ================= -->
+
+        <div class="offers-grid" id="offersGrid">
+        </div>
+
+
+        <!-- ================= NO RESULTS ================= -->
+
+        <div
+            id="noResults"
+            class="no-results"
+            style="display: none;"
+        >
+
+            <div class="no-results-icon">
+                🔍
+            </div>
+
+            <h3>
+                Aucune offre trouvée
+            </h3>
+
+            <p>
+                Essayez de modifier vos critères de recherche.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="logo">
+                    <span class="logo-icon">S</span>
+                    <span>StageX</span>
+                </div>
+
+                <p>
+                    La plateforme intelligente pour trouver
+                    votre stage à Marrakech.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Accueil
+                </a>
+
+                <a href="offres.html">
+                    Offres
+                </a>
+
+                <a href="index.html#ai-match">
+                    AI Match
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 StageX Marrakech.
+            Tous droits réservés.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/offres.js"></script>
+
+</body>
+</html>
