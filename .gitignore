@@ -32,3 +32,6 @@ exports/
 
 # Donnees internes des offres
 data/offres_manuelles/
+# Fichiers gardés localement mais non publiés
+frontend/admin.html
+backend/source_claude.py
